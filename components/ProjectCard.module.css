@@ -1,0 +1,17 @@
+.projectcard_dark {
+	border: 2px solid white;
+}
+
+.projectcard_light {
+	border: 2px solid black;
+}
+
+.tech_dark {
+	border: 2px solid white;
+	color: white;
+}
+
+.tech_light {
+	border: 2px solid black;
+	color: black;
+}

@@ -1,0 +1,75 @@
+.div_dark {
+	background-color: rgb(28, 25, 23);
+}
+
+.div_light {
+	background-color: white;
+}
+
+.h1_dark,
+.h2_dark,
+.p_dark {
+	color: white;
+}
+
+.h1_light,
+.h2_light,
+.p_light {
+	color: black;
+}
+
+.button_dark {
+	background-color: rgb(253, 186, 116);
+}
+
+.button_light {
+	background-color: rgb(196, 181, 253);
+}
+
+.button_gradient {
+	background-image: linear-gradient(
+		to right,
+		rgb(234, 179, 8),
+		rgb(236, 72, 153)
+	);
+}
+
+.input_dark {
+	background-color: rgb(28, 25, 23);
+	border: 2px solid white;
+}
+
+.input {
+	color: rgb(214, 211, 209);
+}
+
+.input_light {
+	background-color: white;
+	border: 2px solid lightgray;
+	color: black;
+}
+
+.textarea_dark {
+	background-color: rgb(28, 25, 23);
+	border: 2px solid white;
+}
+
+.textarea_light {
+	background-color: white;
+	border: 2px solid lightgray;
+	color: black;
+}
+
+.copyright_dark,
+.copyright_light {
+	color: rgb(214, 211, 209);
+}
+
+.copyright_dark {
+	opacity: 60%;
+}
+
+.copyright_light {
+	color: black;
+	opacity: 50%;
+}
