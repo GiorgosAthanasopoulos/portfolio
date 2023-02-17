@@ -4,9 +4,9 @@ import Project from "@/types/Project";
 const Projects: Project[] = [
     {
         title: "Developer Portfolio",
-        tech: ["Next.js", "React", "Tailwind"],
+        tech: ["Next.js", "React.js", "Tailwind-CSS"],
         image: "/portfolio.png",
-        url: "https://portfolio-giorgosathanasopoulos.vercel.app",
+        url: "https://www.github.com/giorgosathanasopoulos/portfolio",
     },
 ];
 
