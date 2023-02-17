@@ -1,14 +1,16 @@
 "use client";
 
-import { useForm, ValidationError } from "@formspree/react";
+import ProjectCard from "@/components/ProjectCard";
 import Projects from "@/data/Projects";
-import { useState } from "react";
-import styles from "./page.module.css";
+import { useForm, ValidationError } from "@formspree/react";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-regular-svg-icons";
-import ProjectCard from "@/components/ProjectCard";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
+import styles from "./page.module.css";
 config.autoAddCss = false;
 
 export default function Home(): JSX.Element {
@@ -36,6 +38,15 @@ export default function Home(): JSX.Element {
 						icon={dark ? faSun : faMoon}
 					></FontAwesomeIcon>
 				</button>
+				<div className="flex flex-row justify-center">
+					<Image
+						src="https://avatars.githubusercontent.com/u/90207655?s=96&v=4"
+						alt="github-image"
+						width={96}
+						height={96}
+						className="rounded-[50%] mb-2"
+					/>
+				</div>
 				<h1
 					className={
 						(dark ? styles.h1_dark : styles.h1_light) +
@@ -76,19 +87,90 @@ export default function Home(): JSX.Element {
 						})}
 					</div>
 				</div>
-				{/* TODO: KNOWLEDGE, SKILLS, EXPERIENCE */}
-				<div></div>
+				<div className="mt-12">
+					<ol
+						className={
+							(dark ? styles.ol_dark : styles.ol_light) +
+							" list-decimal"
+						}
+					>
+						<li>
+							<div>
+								<h1 className="text-3xl mb-2">Skills</h1>
+								<ul className="list-disc mt-2">
+									<li>HTML/CSS/JavaScript/TypeScript</li>
+									<li>React.js/Next.js</li>
+									<li>Express.js</li>
+									<li>MySQL</li>
+								</ul>
+							</div>
+						</li>
+						<li className="mt-6">
+							<div>
+								<h1 className="text-3xl mb-2">Languages</h1>
+								<ul className="list-disc mt-2">
+									<li>Greek - Native</li>
+									<li>English - Fluent</li>
+								</ul>
+							</div>
+						</li>
+						<li className="mt-6">
+							<div>
+								<h1 className="text-3xl mb-2">Experience</h1>
+								<ul className="list-disc mt-2">
+									<li>
+										Github projects:{" "}
+										<Link
+											href="https://github.com/giorgosathanasopoulos/?tab=repositories&q=&type=public&sort=stargazers"
+											className={
+												(dark
+													? styles.a_dark
+													: styles.a_light) +
+												" underline"
+											}
+											target="_blank"
+										>
+											GiorgosAthanasopoulos/repositories
+										</Link>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li className="mt-6">
+							<div>
+								<h1 className="text-3xl mb-2">Education</h1>
+								<ul className="list-disc mt-2">
+									<li>
+										Undergraduate computer science student @{" "}
+										<Link
+											href="https://www.aueb.gr/"
+											className={
+												(dark
+													? styles.a_dark
+													: styles.a_light) +
+												" underline"
+											}
+											target="_blank"
+										>
+											aueb.gr
+										</Link>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ol>
+				</div>
 				{state.succeeded ? (
 					<p className="text-white my-12">
 						Thank you for your submission!
 					</p>
 				) : (
-					<div className="text-left mt-[10vh] mx-[10%] flex flex-column justify-center align-center items-center">
+					<div className="text-left mx-[10%] flex flex-column justify-center align-center items-center">
 						<form className="my-[10vh]" onSubmit={handleSubmit}>
 							<h1
 								className={
 									(dark ? styles.h1_dark : styles.h1_light) +
-									" underline font-bold text-3xl text-left mt-4 underline-offset-8"
+									" underline text-3xl text-left mt-4 underline-offset-8"
 								}
 							>
 								Contact
@@ -172,6 +254,49 @@ export default function Home(): JSX.Element {
 						</form>
 					</div>
 				)}
+				<div className="mb-12">
+					<h1
+						className={
+							(dark ? styles.h1_dark : styles.h1_light) +
+							" text-3xl"
+						}
+					>
+						Links:
+					</h1>
+					<ul
+						className={
+							(dark ? styles.ol_dark : styles.ol_light) + " mt-2"
+						}
+					>
+						<li>
+							<Link
+								href="https://www.github.com/giorgosathanasopoulos/"
+								target="_blank"
+								className="underline"
+							>
+								Github
+							</Link>
+						</li>
+						<li>
+							<Link
+								href="mailto:athanassopoulosg@gmail.com"
+								target="_blank"
+								className="underline"
+							>
+								Email
+							</Link>
+						</li>
+						<li>
+							<Link
+								href="https://www.linkedin.com/in/giorgos-athanasopoulos/"
+								target="_blank"
+								className="underline"
+							>
+								LinkedIn
+							</Link>
+						</li>
+					</ul>
+				</div>
 				<div>
 					<p
 						className={

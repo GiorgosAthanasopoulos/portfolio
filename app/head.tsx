@@ -18,6 +18,10 @@ export default function Head() {
 				name="keywords"
 				content="Giorgos, Athanasopoulos, Developer, Portfolio, Fullstack, Frontend, Backend, HTML, CSS, Javascript, Typescript, Tailwind, Next.js, React.js, Java, Spring-boot, RESTful, API, Mysql"
 			/>
+			<link
+				rel="icon"
+				href="https://avatars.githubusercontent.com/u/90207655?s=96&v=4"
+			/>
 		</>
 	);
 }

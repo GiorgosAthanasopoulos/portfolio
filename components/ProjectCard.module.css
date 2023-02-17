@@ -1,9 +1,11 @@
 .projectcard_dark {
 	border: 2px solid white;
+	color: white;
 }
 
 .projectcard_light {
 	border: 2px solid black;
+	color: black;
 }
 
 .tech_dark {

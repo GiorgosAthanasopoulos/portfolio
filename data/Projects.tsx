@@ -15,7 +15,7 @@ const Projects: Project[] = [
 	{
 		title: "Developer Portfolio",
 		tech: ["Next.js", "React", "Tailwind"],
-		image: "/public/project1.png",
+		image: "/portfolio.png",
 	},
 ];
 

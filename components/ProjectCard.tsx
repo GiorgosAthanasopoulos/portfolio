@@ -19,15 +19,18 @@ export default function ProjectCard({
 					(dark
 						? styles.projectcard_dark
 						: styles.projectcard_light) +
-					" mt-[5vh] sm:w-[50vw] md:w-[40vw] lg:w-[30vw] p-4 text-left rounded-xl"
+					" mt-[5vh] sm:w-[50vw] md:w-[40vw] lg:w-[30vw] p-4 text-center rounded-xl"
 				}
 			>
-				<Image
-					src={project.image}
-					alt="project-image"
-					width="150"
-					height="150"
-				/>
+				<div className="flex flex-row justify-center text-center items-center align-center">
+					<Image
+						src={project.image}
+						alt="project-image"
+						width="150"
+						height="150"
+						className="w-auto"
+					/>
+				</div>
 				<div
 					className={
 						(dark
@@ -45,7 +48,7 @@ export default function ProjectCard({
 					>
 						{project.title}
 					</h2>
-					<div className="flex flex-row gap-4">
+					<div className="flex flex-row gap-4 text-center justify-center">
 						{project.tech.map((tech, index) => {
 							return (
 								<div key={index}>

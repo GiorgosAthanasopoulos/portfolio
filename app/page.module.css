@@ -32,6 +32,28 @@
 		rgb(234, 179, 8),
 		rgb(236, 72, 153)
 	);
+	background-image: -o-linear-gradient(
+		to right,
+		rgb(234, 179, 8),
+		rgb(236, 72, 153)
+	);
+	background-image: -moz-linear-gradient(
+		to right,
+		rgb(234, 179, 8),
+		rgb(236, 72, 153)
+	);
+	background-image: -webkit-linear-gradient(
+		to right,
+		rgb(234, 179, 8),
+		rgb(236, 72, 153)
+	);
+	background-image: -webkit-gradient(
+		linear,
+		left,
+		right,
+		from(rgb(234, 179, 8)),
+		to(rgb(236, 72, 153))
+	);
 }
 
 .input_dark {
@@ -72,4 +94,22 @@
 .copyright_light {
 	color: black;
 	opacity: 50%;
+}
+
+.ol_dark {
+	color: white;
+}
+
+.ol_light {
+	color: black;
+}
+
+.a_dark,
+.a_light {
+	color: inherit;
+}
+
+.a_dark:visited,
+.a_light:visited {
+	color: inherit;
 }
