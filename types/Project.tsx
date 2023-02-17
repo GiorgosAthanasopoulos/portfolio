@@ -1,7 +1,8 @@
 type Project = {
-	title: string;
-	tech: string[];
-	image: string;
+    title: string;
+    tech: string[];
+    image: string;
+    url: string;
 };
 
 export default Project;
