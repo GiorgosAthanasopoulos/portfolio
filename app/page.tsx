@@ -75,7 +75,7 @@ export default function Home(): JSX.Element {
 					fullstack development.
 				</p>
 				<div className="flex justify-center text-center align-center items-center gap-10 lg:gap-12 md:gap-24">
-					<div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  mx-[15vw] lg:mx-[5vw] md:mx-[10vw] gap-10 lg:gap-12 md:gap-24">
+					<div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  mx-[15vw] lg:mx-[5vw] md:mx-[10vw] gap-10 lg:gap-12 md:gap-24 items-center justify-items-center">
 						{Projects.map((project, index) => {
 							return (
 								<ProjectCard
