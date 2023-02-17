@@ -21,6 +21,10 @@ export default function Head() {
 			/>
 			<meta charSet="UTF-8" />
 			<meta httpEquiv="x-ua-compatible" content="IE=Edge" />
+			<meta
+				name="google-site-verification"
+				content="H8T_faSofjL-YQ0QB14c9nOkuLPmn6zlKZgNUEBkBhQ"
+			/>
 		</>
 	);
 }
