@@ -348,7 +348,7 @@ export default function Home(): JSX.Element {
                             </li>
                             <li>
                                 <Link
-                                    href="https://www.linkedin.com/in/giorgos-athanasopoulos/"
+                                    href="https://www.linkedin.com/in/giorgos-athanassopoulos/"
                                     target="_blank"
                                     className="underline"
                                 >
