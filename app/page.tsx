@@ -5,13 +5,14 @@ import Projects from "@/data/Projects";
 import { useForm, ValidationError } from "@formspree/react";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import { faMoon, faSun } from "@fortawesome/free-regular-svg-icons";
+import { faEnvelope, faMoon, faSun } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import styles from "./page.module.css";
 import { NextSeo } from "next-seo";
+import SocialIcon from "@/components/SocialIcon";
 config.autoAddCss = false;
 
 export default function Home(): JSX.Element {
@@ -115,7 +116,7 @@ export default function Home(): JSX.Element {
                             " mt-[3vh] text-3xl"
                         }
                     >
-                        Fullstack Developer
+                        Frontend/Fullstack Developer
                     </h2>
                     <p
                         className={
@@ -153,9 +154,9 @@ export default function Home(): JSX.Element {
                                     <h1 className="text-3xl mb-2">Skills</h1>
                                     <ul className="list-disc mt-2">
                                         <li>HTML/CSS/JavaScript/TypeScript</li>
-                                        <li>React.js/Next.js</li>
-                                        <li>Express.js</li>
-                                        <li>MySQL</li>
+                                        <li>Frontend Frameworks(Svelte/SvelteKit,React.js/Next.js)</li>
+                                        <li>API/Server Development(Spring-Boot,Express.js)</li>
+                                        <li>SQL/Databases(MySQL,PostgresSQL,MSSQL)</li>
                                     </ul>
                                 </div>
                             </li>
@@ -303,10 +304,7 @@ export default function Home(): JSX.Element {
                                 <button
                                     type="submit"
                                     disabled={state.submitting}
-                                    className={
-                                        styles.button_gradient +
-                                        " p-4 w-[40%] mt-4 text-white"
-                                    }
+                                    className="bg-gradient-to-r from-customYellow to-customRed p-4 w-[40%] mt-4 text-white"
                                 >
                                     Work with me
                                 </button>
@@ -325,35 +323,32 @@ export default function Home(): JSX.Element {
                         <ul
                             className={
                                 (dark ? styles.ol_dark : styles.ol_light) +
-                                " mt-2"
+                                " mt-2 flex flex-row gap-2 justify-center align-center align-items-center text-center"
                             }
                         >
                             <li>
-                                <Link
-                                    href="https://www.github.com/giorgosathanasopoulos/"
-                                    target="_blank"
-                                    className="underline"
-                                >
-                                    Github
-                                </Link>
+                                <SocialIcon
+                                    href='https://www.github.com/giorgosathanasopoulos'
+                                    src='github.svg'
+                                    alt='Github'
+                                    dark={dark}
+                                />
                             </li>
                             <li>
-                                <Link
-                                    href="mailto:athanassopoulosg@gmail.com"
-                                    target="_blank"
-                                    className="underline"
-                                >
-                                    Email
-                                </Link>
+                                <SocialIcon
+                                    href='mailto:athanassopoulosg@gmail.com'
+                                    src='envelope.svg'
+                                    alt='Email'
+                                    dark={dark}
+                                />
                             </li>
                             <li>
-                                <Link
-                                    href="https://www.linkedin.com/in/giorgos-athanassopoulos/"
-                                    target="_blank"
-                                    className="underline"
-                                >
-                                    LinkedIn
-                                </Link>
+                                <SocialIcon
+                                    href='https://www.linkedin.com/in/giorgos-athanassopoulos/'
+                                    src='linkedin.svg'
+                                    alt='LinkedIn'
+                                    dark={dark}
+                                />
                             </li>
                         </ul>
                     </div>

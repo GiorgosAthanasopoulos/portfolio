@@ -14,6 +14,12 @@ const Projects: Project[] = [
         image: "/ertflix.png",
         url: "https://www.github.com/giorgosathanasopoulos/aueb-cpp-ergasia1",
     },
+    {
+        "title": "Visual Morse Exercises",
+        "tech": ["Svelte", "SvelteKit"],
+        "image": "/morse.png",
+        "url": "https://wolfpack-morse-exercises.vercel.app"
+    },
 ];
 
 export default Projects;

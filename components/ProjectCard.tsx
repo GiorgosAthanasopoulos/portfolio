@@ -31,7 +31,7 @@ export default function ProjectCard({
                         alt="project-image"
                         width="150"
                         height="150"
-                        className="w-auto"
+                        className="w-auto h-48"
                     />
                 </div>
                 <div
