@@ -17,8 +17,20 @@ const Projects: Project[] = [
     {
         "title": "Visual Morse Exercises",
         "tech": ["Svelte", "SvelteKit"],
-        "image": "/morse.png",
+        "image": "/visual-morse-exercises.png",
         "url": "https://wolfpack-morse-exercises.vercel.app"
+    },
+    {
+        "title": "Visual Morse Tool",
+        "tech": ["Godot", "Gdscript"],
+        "image": "/visual-morse.png",
+        "url": "https://github.com/GiorgosAthanasopoulos/VisualMorse",
+    },
+    {
+        "title": "Chess",
+        "tech": ["C", "C++", "Raylib"],
+        "image": "/raylib-chess.png",
+        "url": "https://github.com/GiorgosAthanasopoulos/raylib-chess",
     },
 ];
 
