@@ -116,7 +116,7 @@ export default function Home(): JSX.Element {
                             " mt-[3vh] text-3xl"
                         }
                     >
-                        Frontend/Fullstack Developer
+                        Frontend Developer
                     </h2>
                     <p
                         className={
@@ -155,8 +155,7 @@ export default function Home(): JSX.Element {
                                     <ul className="list-disc mt-2">
                                         <li>HTML/CSS/JavaScript/TypeScript</li>
                                         <li>Frontend Frameworks(Svelte/SvelteKit,React.js/Next.js)</li>
-                                        <li>API/Server Development(Spring-Boot,Express.js)</li>
-                                        <li>SQL/Databases(MySQL,PostgresSQL,MSSQL)</li>
+                                        <li>Content Management Systems(CMS) (e.g.Wordpress)</li>
                                     </ul>
                                 </div>
                             </li>
@@ -176,7 +175,6 @@ export default function Home(): JSX.Element {
                                     </h1>
                                     <ul className="list-disc mt-2">
                                         <li>
-                                            Github projects:{" "}
                                             <Link
                                                 href="https://github.com/giorgosathanasopoulos/?tab=repositories&q=&type=public&sort=stargazers"
                                                 className={
@@ -187,7 +185,20 @@ export default function Home(): JSX.Element {
                                                 }
                                                 target="_blank"
                                             >
-                                                GiorgosAthanasopoulos/repositories
+                                                Github pet projects
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link
+                                                href="https://github.com/giorgosathanasopoulos/?tab=repositories&q=aueb-&type=&language=&sort="
+                                                className={
+                                                    (dark ? styles.a_dark
+                                                        : styles.a_light) +
+                                                    " underline"
+                                                }
+                                                target="_blank"
+                                            >
+                                                University course projects
                                             </Link>
                                         </li>
                                     </ul>
@@ -197,6 +208,9 @@ export default function Home(): JSX.Element {
                                 <div>
                                     <h1 className="text-3xl mb-2">Education</h1>
                                     <ul className="list-disc mt-2">
+                                        <li>
+                                            High School Diploma
+                                        </li>
                                         <li>
                                             Undergraduate computer science
                                             student @{" "}
